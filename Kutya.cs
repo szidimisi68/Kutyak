@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ConsoleApp8
+namespace ConsoleKutya
 {
     internal class Kutya
     {
@@ -14,14 +14,13 @@ namespace ConsoleApp8
         int eletkor;
         string datum;
 
-        public Kutya(string adatsor)
+        public Kutya(int id, string fajta, string nev, int eletkor, string datum)
         {
-            string[] felbontottAdatsor = adatsor.Split(";");
-            this.id = int.Parse(felbontottAdatsor[0]);
-            this.fajta = felbontottAdatsor[1];
-            this.nev = felbontottAdatsor[2];
-            this.eletkor = int.Parse(felbontottAdatsor[3]);
-            this.datum = felbontottAdatsor[4];
+            this.id = id;
+            this.fajta = fajta;
+            this.nev = nev;
+            this.eletkor = eletkor;
+            this.datum = datum;
         }
 
 
